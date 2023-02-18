@@ -36,6 +36,6 @@ app.get('/oauth-callback', ({ query: { code } }, res) => {
     .catch((err) => res.status(500).json({ err: err.message }));
 });
 
-app.listen(8080);
+app.listen(3000);
 // eslint-disable-next-line no-console
-console.log('App listening on port 8080');
+console.log('App listening on port 3000');
